@@ -5,6 +5,7 @@
 }
 html{
     font-family: sans-serif;
+    color: white;
 }
 
 :root {
@@ -19,11 +20,19 @@ html{
 header {
     background-color: var(--bg-orange);
     box-shadow: 1px 1px 40px;
-    color: white;
 }
 main {
     padding-top: 5rem;
     padding-bottom: 5rem;
+}
+footer {
+    background-color: var(--bg-black);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+footer a{
+    font-size: var(--font-product-price);
+    padding: 0;
 }
 a{
     display: inline-block;
@@ -43,7 +52,7 @@ a{
 }
 .col{
 }
-.navbar {
+ul {
     list-style: none;
 }
 .logo {
@@ -137,4 +146,13 @@ a{
 .price-discount {
     text-decoration: line-through;
     color: gray;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+/* bonuss */
+.product:hover .favourite{
+    color: var(--bg-red);
 }
