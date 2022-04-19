@@ -3,11 +3,138 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: sans-serif;
+}
 
+:root {
+    --bg-orange:#FF6800;
+    --bg-black:#1A1A1A;
+    --bg-red: #FF0000;
+    --bg-green:#008001;
+    --font-product-name: 14px;
+    --font-product-brand: 10px;
+    --font-product-price:12px;
+}
+header {
+    background-color: var(--bg-orange);
+    box-shadow: 1px 1px 40px;
+    color: white;
+}
+main {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+a{
+    display: inline-block;
+    padding: 0 0.5rem;
+    text-decoration: none;
+    color: white;
+}
 .container {
     max-width: 990px;
     min-width: 300px;
     width: 100%;
     padding: .5rem 1rem;
     margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.col{
+}
+.navbar {
+    list-style: none;
+}
+.logo {
+    width: 100px;
+}
+.flex-grow-2{
+    flex-grow: 2;
+}
+.flex-basis-25{
+    flex-basis: 25%;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.wrapping {
+    flex-wrap: wrap;
+}
+.gap-16{
+    column-gap: 1rem;
+}
+.gap-8{
+    column-gap: .25rem;
+}
+.card {
+    max-width: calc((100% - 2rem) /3);
+    padding: 1rem 0;
+}
+.product-img {
+    position: relative;
+}
+.product-img img{
+    width: 100%;
+}
+.product-description{
+    flex-direction: column;
+    display: flex;
+}
+.product:hover .product-image-default {
+    display: none;
+}
+.product:hover .product-image-hover {
+    display: block;
+}
+.product-image-hover {
+    display:none;
+}
+.container-discount {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+.discount {
+    background-color: var(--bg-red);
+}
+.sustenibility {
+    background-color: var(--bg-green);
+    
+}
+.sustenibility, .discount{
+    color: white;
+    padding: .25rem .5rem;
+    font-size: 12px;
+}
+.favourite {
+    color: var(--bg-black);
+    background-color: white;
+    padding: .5rem .5rem;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.favourite svg{
+    width: 1rem;
+}
+.product-brand {
+    font-size: var(--font-product-brand);
+    color: gray;
+    text-transform: capitalize;
+}
+.product-name {
+    text-transform: uppercase;
+    font-size: var(--font-product-name);
+}
+.product-price {
+    font-size: var(--font-product-price);
+    color: var(--bg-red);
+}
+.price-discount {
+    text-decoration: line-through;
+    color: gray;
 }
